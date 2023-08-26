@@ -1,0 +1,103 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react-hooks/recommended"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    },
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true,
+      "tsx": true
+    },
+    "ecmaVersion": 2018,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "prettier"],
+  "rules": {
+    "comma-dangle": [
+      "error",
+      {
+        "arrays": "never",
+        "objects": "never",
+        "imports": "never",
+        "exports": "never",
+        "functions": "never"
+      }
+    ],
+    "prefer-regex-literals": "off",
+    "quotes": ["off", "single"],
+    "react/no-unknown-property": "off",
+    "react/react-in-jsx-scope": 0,
+    "react/prefer-stateless-function": 0,
+    "react/jsx-filename-extension": 0,
+    "react/jsx-one-expression-per-line": 0,
+    "no-nested-ternary": 0,
+    "func-names": 0,
+    "import/prefer-default-export": "off",
+    "import/no-unresolved": "off",
+    "import/extensions": "off",
+    "react/jsx-props-no-spreading": "off",
+    "no-console": "off",
+    "react/jsx-no-bind": "off",
+    "no-useless-return": "off",
+    "react/jsx-boolean-value": "off",
+    "no-unused-vars": "off",
+    "consistent-return": "off",
+    "no-param-reassign": "off",
+    "no-plusplus": "off",
+    "no-use-before-define": "off",
+    "no-unused-expressions": "off",
+    "object-shorthand": "off",
+    "camelcase": "off",
+    "prefer-const": "off",
+    "prettier/prettier": "off",
+    "no-shadow": "off",
+    "no-alert": "off",
+    "prefer-destructuring": "off",
+    "array-callback-return": "off",
+    "no-undef": "off",
+    "default-param-last": "off",
+    "prefer-promise-reject-errors": "off",
+    "no-inner-declarations": "off",
+    "block-scoped-var": "off",
+    "vars-on-top": "error",
+    "no-var": "error",
+    "no-bitwise": "off",
+    "no-loop-func": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react/self-closing-comp": "warn",
+    "no-empty-function": "off",
+    "@typescript-eslint/no-empty-function": "off",
+    "react-hooks/exhaustive-deps": [
+      "off",
+      {
+        "additionalHooks": "useRecoilCallback"
+      }
+    ],
+    "no-await-in-loop": "off",
+    "import/order": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "no-case-declarations": "off",
+    "react/no-unstable-nested-components": "off",
+    "react/function-component-definition": "off",
+    "no-useless-escape": "off"
+  }
+}
